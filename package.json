@@ -1,5 +1,5 @@
 {
-    "name": "simple-retry",
+    "name": "mini-retry",
     "version": "1.0.0",
     "description": "A simple, type safe utility to execute a function a given number of times or until it is successful.",
     "main": "lib/cjs/index.js",
