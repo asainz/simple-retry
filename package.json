@@ -1,0 +1,51 @@
+{
+    "name": "simple-retry",
+    "version": "1.0.0",
+    "description": "A simple, type safe utility to execute a function a given number of times or until it is successful.",
+    "main": "lib/cjs/index.js",
+    "module": "lib/esm/index.js",
+    "typings": "lib/cjs/index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "watch": "tsc --watch",
+        "build": "tsc && tsc -p tsconfig.esm.json"
+    },
+    "files": [
+        "lib/**/*.js",
+        "lib/**/*.d.ts",
+        "package.json",
+        "README.md",
+        "LICENSE"
+    ],
+    "author": "Andrés Sainz de Aja",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.22.10",
+        "@babel/preset-env": "^7.22.10",
+        "@babel/preset-typescript": "^7.22.5",
+        "@types/jest": "^29.5.3",
+        "babel-jest": "^29.6.2",
+        "jest": "^29.6.2",
+        "ts-jest": "^29.1.1",
+        "typescript": "^5.1.6"
+    },
+    "keywords": [
+        "typescript",
+        "javascript",
+        "retry",
+        "repeat",
+        "replay",
+        "node",
+        "nodejs",
+        "error",
+        "promise",
+        "async",
+        "await",
+        "asyncawait",
+        "trycatch",
+        "react",
+        "reactjs",
+        "angular",
+        "vue"
+    ]
+}
