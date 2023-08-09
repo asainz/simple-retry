@@ -13,5 +13,5 @@
         "alwaysStrict": true,
         "sourceMap": false
     },
-    "exclude": ["**/*.test.ts", "node_modules", "lib", "jest.config.ts"]
+    "exclude": ["**/*.test.ts", "node_modules", "lib", "jest.config.js"]
 }

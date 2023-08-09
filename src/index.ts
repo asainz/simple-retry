@@ -7,15 +7,16 @@ interface Options {
 
 type Retry = <T extends Func>(
     fn: T,
-    opts: Options
+    opts?: Options
 ) => Promise<Awaited<ReturnType<T>>>
 
 const retry: Retry = async (fn, opts) => {
-    const { retries = 3, delay = 0 } = opts
+    const retries = opts?.retries ?? 1
+    const delay = opts?.delay ?? 0
     try {
-        return await fn()
+        return await fn(retries + 1)
     } catch (error) {
-        if (retries <= 1) {
+        if (retries < 1) {
             throw error
         }
         if (delay) {
