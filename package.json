@@ -18,7 +18,11 @@
         "LICENSE"
     ],
     "author": "Andrés Sainz de Aja",
-    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/asainz/simple-retry.git"
+    },
+    "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.22.10",
         "@babel/preset-env": "^7.22.10",
