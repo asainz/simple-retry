@@ -10,7 +10,7 @@ type Retry = <T extends Func>(
     opts?: Options
 ) => Promise<Awaited<ReturnType<T>>>
 
-const retry: Retry = async (fn, opts) => {
+const retry: Retry = async (fn, opts = {}) => {
     const retries = opts?.retries ?? 1
     const delay = opts?.delay ?? 0
     try {
